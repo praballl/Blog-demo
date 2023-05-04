@@ -1,0 +1,19 @@
+<!-- header file -->
+<%- include partials/header.ejs/ %>
+
+    <!-- ------MAIN CODE----- -->
+    <h1>Compose</h1>
+    <form action="/compose" method="post">
+        <div class="mb-3">
+        <label for="postTitle" class="form-label"><b>Title</b></label>
+        <input class="form-control" type="text" name="postTitle" id="postTitle">
+    </div>
+ <div class="mb-3">
+        <label for="postBody" class="form-label"><b>Post</b></label>
+        <textarea class="form-control" name="postBody" id="postBody" cols="30" rows="5"></textarea>
+    </div>
+        <button type="submit" class="btn btn-primary button" name="button">publish</button>
+   
+    </form>
+    <!-- footer file -->
+    <%- include partials/footer.ejs/ %>
